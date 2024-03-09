@@ -1,0 +1,49 @@
+header {
+  //   font-size: 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+// main {
+//   width: 80%;
+//   height: 500px;
+//   position: relative;
+//   background-color: yellow;
+//   padding: 20px 10px;
+//   border: 1px solid red;
+// }
+
+.item {
+  background-color: aqua;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item1 {
+  @extend .item;
+  width: 300px;
+  margin: auto;
+}
+
+.item2 {
+  @extend .item;
+  min-width: 300px;
+}
+
+.item3 {
+  @extend .item;
+  max-width: 300px;
+}
+
+.item4 {
+  @extend .item;
+  width: auto;
+}
+
+@media (hover: hover) or (min-width: 800px) {
+  h1 {
+    color: blue;
+  }
+}
